@@ -1,2 +1,14 @@
+<% include ./partials/header%>
 <h1> You fell in love with: <%= thingVar.toUpperCase() %></h1>
+
+<% if (thingVar.toLowerCase() === "rusty") {%>
+  <p>GOOD CHOICE! RUSTY IS THE BEST!</p>
+  <% } else {%>
+  <p>OK! This program is set for Rusty</p>
+  <%} %>
+
+ 
+
 <p> this is the ejs file</p>
+
+<% include ./partials/footer %>
